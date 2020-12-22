@@ -1,0 +1,9 @@
+server:
+  port: 6666
+spring:
+  application:
+    name: book-server
+  datasource:
+    url: jdbc:mysql://182.43.172.163:3307/book?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=CTT&allowMultiQueries=true
+    username: root
+    password: hlx.book

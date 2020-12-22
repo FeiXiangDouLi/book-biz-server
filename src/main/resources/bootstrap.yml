@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: book-server
+  cloud:
+    nacos:
+      config:
+        namespace: e6192bda-e107-445e-b024-002137cb414a   #默认public
+        server-addr: 182.43.172.163:8848
+        file-extension: yml   #默认是properties格式，支持格式 properties/yaml/yml 这里的配置不会影响shared-configs/extension-configs参数
+#        group:       #默认DEFAULT_GROUP
+#        prefix: test #指定data-id的前缀，默认是spring.application.name的值
+      discovery:
+       namespace: e6192bda-e107-445e-b024-002137cb414a
+       server-addr: 182.43.172.163:8848
+#        group: DEFAULT_GROUP #默认值DEFAULT_GROUP
+#        cluster-name: DEFAULT #默认DEFAULT
+#        weight: #1-100权重
+#        watch:
+#          enabled: true #默认true,是否开启监控
